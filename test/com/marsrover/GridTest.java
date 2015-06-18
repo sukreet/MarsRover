@@ -16,7 +16,18 @@ public class GridTest {
         String expectedPosition = "7 5 E\n";
 
         assertEquals(actualState, expectedPosition);
-        
+
     }
 
+    @Test
+    public void shouldBeAbleToMoveRoverForwardAndTurnLeft() {
+        Rover rover = new Rover(5, 5, 'E');
+        Grid grid = new Grid(10, 10, rover, "MML");
+
+        String actualState = grid.moveRover();
+        String expectedPosition = "7 5 N\n";
+
+        assertEquals(actualState, expectedPosition);
+
+    }
 }
