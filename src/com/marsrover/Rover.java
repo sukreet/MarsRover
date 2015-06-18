@@ -48,6 +48,7 @@ public class Rover {
             this.xCoordinate++;
         else if (this.directionFacing == 'S')
             this.yCoordinate--;
-
+        else if (this.directionFacing == 'W')
+            this.xCoordinate--;
     }
 }
