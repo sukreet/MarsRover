@@ -60,4 +60,16 @@ public class RoverTest {
         assertEquals(expectedState, actualState);
     }
 
+    @Test
+    public void shouldBeAbleToTurnRighthWhileFacingNorth() {
+        Rover rover = new Rover(1, 1, 'N');
+        rover.roverAction('R');
+
+        String expectedState = "1 1 E\n";
+        String actualState = rover.roverState();
+
+        assertEquals(expectedState, actualState);
+    }
+
+
 }
