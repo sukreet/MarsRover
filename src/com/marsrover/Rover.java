@@ -18,7 +18,7 @@ public class Rover {
         return state;
     }
 
-    public void roverAction(char input) {
+    public void roverTurn(char input) {
         if (input == 'L') {
             if (this.directionFacing == 'N')
                 this.directionFacing = 'W';

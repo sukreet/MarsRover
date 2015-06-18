@@ -19,7 +19,7 @@ public class RoverTest {
     @Test
     public void shouldBeAbleToTurnLeftWhileFacingNorth() {
         Rover rover = new Rover(1, 1, 'N');
-        rover.roverAction('L');
+        rover.roverTurn('L');
 
         String expectedState = "1 1 W\n";
         String actualState = rover.roverState();
@@ -30,7 +30,7 @@ public class RoverTest {
     @Test
     public void shouldBeAbleToTurnLeftWhileFacingWest() {
         Rover rover = new Rover(1, 1, 'W');
-        rover.roverAction('L');
+        rover.roverTurn('L');
 
         String expectedState = "1 1 S\n";
         String actualState = rover.roverState();
@@ -41,7 +41,7 @@ public class RoverTest {
     @Test
     public void shouldBeAbleToTurnLeftWhileFacingSouth() {
         Rover rover = new Rover(1, 1, 'S');
-        rover.roverAction('L');
+        rover.roverTurn('L');
 
         String expectedState = "1 1 E\n";
         String actualState = rover.roverState();
@@ -52,7 +52,7 @@ public class RoverTest {
     @Test
     public void shouldBeAbleToTurnLeftWhileFacingEast() {
         Rover rover = new Rover(1, 1, 'E');
-        rover.roverAction('L');
+        rover.roverTurn('L');
 
         String expectedState = "1 1 N\n";
         String actualState = rover.roverState();
@@ -63,7 +63,7 @@ public class RoverTest {
     @Test
     public void shouldBeAbleToTurnRightWhileFacingNorth() {
         Rover rover = new Rover(1, 1, 'N');
-        rover.roverAction('R');
+        rover.roverTurn('R');
 
         String expectedState = "1 1 E\n";
         String actualState = rover.roverState();
@@ -75,7 +75,7 @@ public class RoverTest {
     @Test
     public void shouldBeAbleToTurnRightWhileFacingEast() {
         Rover rover = new Rover(1, 1, 'E');
-        rover.roverAction('R');
+        rover.roverTurn('R');
 
         String expectedState = "1 1 S\n";
         String actualState = rover.roverState();
@@ -86,7 +86,7 @@ public class RoverTest {
     @Test
     public void shouldBeAbleToTurnRightWhileFacingSouth() {
         Rover rover = new Rover(1, 1, 'S');
-        rover.roverAction('R');
+        rover.roverTurn('R');
 
         String expectedState = "1 1 W\n";
         String actualState = rover.roverState();
@@ -98,7 +98,7 @@ public class RoverTest {
     @Test
     public void shouldBeAbleToTurnRightWhileFacingWest() {
         Rover rover = new Rover(1, 1, 'W');
-        rover.roverAction('R');
+        rover.roverTurn('R');
 
         String expectedState = "1 1 N\n";
         String actualState = rover.roverState();
