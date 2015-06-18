@@ -51,4 +51,8 @@ public class Rover {
         else if (this.directionFacing == 'W')
             this.xCoordinate--;
     }
+
+    public boolean canMove(int xLimit, int yLimit) {
+        return true;
+    }
 }
