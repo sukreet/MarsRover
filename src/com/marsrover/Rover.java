@@ -19,8 +19,10 @@ public class Rover {
     }
 
     public void roverAction(char input) {
-        if(this.directionFacing == 'N');
-           if(input=='L')
-               this.directionFacing = 'W';
+        if (input == 'L')
+            if (this.directionFacing == 'N')
+                this.directionFacing = 'W';
+            else if (this.directionFacing == 'W')
+                this.directionFacing = 'S';
     }
 }
