@@ -55,6 +55,9 @@ public class Rover {
     public boolean canMove(int xLimit, int yLimit) {
         if (directionFacing == 'W' && xCoordinate == 0)
             return false;
+        if (directionFacing == 'E' && xCoordinate == xLimit)
+            return false;
+
         return true;
     }
 }

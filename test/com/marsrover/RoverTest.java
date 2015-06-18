@@ -161,8 +161,15 @@ public class RoverTest {
     }
 
     @Test
-    public void shouldBeAbleToCheckIfAroverCanMoveWestWnenIfIsOnWestLimit() {
+    public void shouldBeAbleToCheckIfAroverCanMoveWestWhnenIfIsOnWestLimit() {
         Rover rover = new Rover(0, 5, 'W');
+
+        assertFalse(rover.canMove(5, 5));
+    }
+
+    @Test
+    public void shouldBeAbleToCheckIfAroverCanMoveEastWhnenIfIsOnEastLimit() {
+        Rover rover = new Rover(5, 7, 'E');
 
         assertFalse(rover.canMove(5, 5));
     }
