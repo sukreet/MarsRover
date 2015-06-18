@@ -116,4 +116,16 @@ public class RoverTest {
 
         assertEquals(expectedState, actualState);
     }
+
+
+    @Test
+    public void shouldBeAbleToMoveForwardWhileFacingEast() {
+        Rover rover = new Rover(5, 5, 'E');
+        rover.roverMove();
+
+        String expectedState = "6 5 E\n";
+        String actualState = rover.roverState();
+
+        assertEquals(expectedState, actualState);
+    }
 }

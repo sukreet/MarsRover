@@ -44,5 +44,7 @@ public class Rover {
     public void roverMove() {
         if (this.directionFacing == 'N')
             this.yCoordinate++;
+        else if (this.directionFacing == 'E')
+            this.xCoordinate++;
     }
 }
