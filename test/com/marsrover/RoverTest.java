@@ -94,4 +94,16 @@ public class RoverTest {
         assertEquals(expectedState, actualState);
     }
 
+
+    @Test
+    public void shouldBeAbleToTurnRightWhileFacingWest() {
+        Rover rover = new Rover(1, 1, 'W');
+        rover.roverAction('R');
+
+        String expectedState = "1 1 N\n";
+        String actualState = rover.roverState();
+
+        assertEquals(expectedState, actualState);
+
+    }
 }
