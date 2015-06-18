@@ -59,7 +59,8 @@ public class Rover {
             return false;
         if (directionFacing == 'N' && yCoordinate == yLimit)
             return false;
-
+        if (directionFacing == 'S' && yCoordinate == 0)
+            return false;
         return true;
     }
 }
