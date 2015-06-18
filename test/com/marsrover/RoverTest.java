@@ -3,6 +3,7 @@ package com.marsrover;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 public class RoverTest {
@@ -156,7 +157,13 @@ public class RoverTest {
     public void shouldBeAbleToCheckIfAroverCanMove() {
         Rover rover = new Rover(5, 5, 'W');
 
-        assertTrue(rover.canMove(10,10));
+        assertTrue(rover.canMove(10, 10));
     }
 
+    @Test
+    public void shouldBeAbleToCheckIfAroverCanMoveWestWnenIfIsOnWestLimit() {
+        Rover rover = new Rover(0, 5, 'W');
+
+        assertFalse(rover.canMove(5, 5));
+    }
 }
