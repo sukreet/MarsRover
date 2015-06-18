@@ -33,6 +33,8 @@ public class Rover {
                 this.directionFacing = 'E';
             else if (this.directionFacing == 'E')
                 this.directionFacing = 'S';
+            else if (this.directionFacing == 'S')
+                this.directionFacing = 'W';
         }
     }
 }
