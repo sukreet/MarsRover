@@ -17,4 +17,10 @@ public class Rover {
         state += this.xCoordinate + " " + this.yCoordinate + " " + this.directionFacing + System.lineSeparator();
         return state;
     }
+
+    public void roverAction(char input) {
+        if(this.directionFacing == 'N');
+           if(input=='L')
+               this.directionFacing = 'W';
+    }
 }
