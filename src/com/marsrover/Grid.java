@@ -17,9 +17,10 @@ public class Grid {
         for (int i = 0; i < actionList.length(); i++) {
             if(actionList.charAt(i) == 'M')
                 rover.roverMove();
-            if(actionList.charAt(i) == 'L')
+           else if(actionList.charAt(i) == 'L')
                 rover.roverTurn('L');
-
+            else if(actionList.charAt(i) == 'R')
+                rover.roverTurn('R');
         }
         return rover.roverState();
 
