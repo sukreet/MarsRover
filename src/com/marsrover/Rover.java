@@ -39,4 +39,10 @@ public class Rover {
                 this.directionFacing = 'N';
         }
     }
+
+
+    public void roverMove() {
+        if (this.directionFacing == 'N')
+            this.yCoordinate++;
+    }
 }

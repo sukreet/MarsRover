@@ -8,9 +8,9 @@ public class RoverTest {
 
     @Test
     public void shouldBeAbleToreturnPositionAndDirectionOFRoverAsString() {
-        Rover rover = new Rover(1, 1, 'S');
+        Rover rover = new Rover(1, 2, 'S');
 
-        String expectedState = "1 1 S\n";
+        String expectedState = "1 2 S\n";
         String actualState = rover.roverState();
 
         assertEquals(expectedState, actualState);
@@ -104,6 +104,16 @@ public class RoverTest {
         String actualState = rover.roverState();
 
         assertEquals(expectedState, actualState);
+    }
 
+    @Test
+    public void shouldBeAbleToMoveForwardWhileFacingNorth() {
+        Rover rover = new Rover(5, 5, 'N');
+        rover.roverMove();
+
+        String expectedState = "5 6 N\n";
+        String actualState = rover.roverState();
+
+        assertEquals(expectedState, actualState);
     }
 }
