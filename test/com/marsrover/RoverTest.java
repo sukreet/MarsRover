@@ -173,4 +173,12 @@ public class RoverTest {
 
         assertFalse(rover.canMove(5, 5));
     }
+
+    @Test
+    public void shouldBeAbleToCheckIfAroverCanMoveNorthWhenItIsOnNorthLimit() {
+        Rover rover = new Rover(5, 5, 'N');
+
+        assertFalse(rover.canMove(5, 5));
+    }
+
 }
